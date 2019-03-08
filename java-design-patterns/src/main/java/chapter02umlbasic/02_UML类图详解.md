@@ -8,13 +8,20 @@
   + 接口 `<interface>`
   
 + 中间的长方形：`类的属性`
-  + `加号 +`: 最大的权限，public
-  + `减号 -`：最小的权限，private
-  + `井号 #`#protected
-~default
-——横线代表static属性
-第三行类的行为：
-斜体代表抽象方法
-：boolean返回值为布尔型
+  + `加号 +`: 最大权限，public
+  + `减号 -`：最小权限，private
+  + `井号 #`：保护权限，protected
+  + `波浪号 ~`：默认权限，default
+  + `下划横线 __`： static属性
+  + `冒号后的double、char、String、int等`：属性的数据类型
+
++ 最下面的长方形：`类的行为(方法)`
+  + `加号 +`: 最大权限，public
+  + `减号 -`：最小权限，private
+  + `井号 #`：保护权限，protected
+  + `波浪号 ~`：默认权限，default
+  + `下划横线 __`： static方法
+  + *斜体*：代表抽象方法
+  + `冒号后的double`：函数的返回类型，没有表示默认返回值为void
 
 
