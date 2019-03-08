@@ -86,5 +86,8 @@
   + 生命线(Lifeline)
   + 控制焦点(Focus of Control)
   + 消息(Message)
+  
+### 例子
+  ![时序图范例](https://img.mukewang.com/szimg/5baf3b880001da7117281080.jpg)
 
 
