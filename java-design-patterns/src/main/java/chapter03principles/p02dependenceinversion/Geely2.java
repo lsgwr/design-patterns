@@ -10,11 +10,18 @@ public class Geely2 {
 
     private ICourse iCourse;
 
+    public Geely2() {
+    }
+
     public Geely2(ICourse iCourse) {
         this.iCourse = iCourse;
     }
 
     public void studyImoocCourse() {
         iCourse.studyCourse();
+    }
+
+    public void setiCourse(ICourse iCourse) {
+        this.iCourse = iCourse;
     }
 }
