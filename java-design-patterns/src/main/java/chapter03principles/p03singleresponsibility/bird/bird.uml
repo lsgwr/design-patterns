@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>chapter03principles.p03singleresponsibility.bird</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">chapter03principles.p03singleresponsibility.bird.WalkBird</node>
+    <node x="261.0" y="0.0">chapter03principles.p03singleresponsibility.bird.FlyBird</node>
+    <node x="159.0" y="101.0">chapter03principles.p03singleresponsibility.bird.Test</node>
+    <node x="0.0" y="197.0">chapter03principles.p03singleresponsibility.bird.Bird</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="chapter03principles.p03singleresponsibility.bird.Test" target="chapter03principles.p03singleresponsibility.bird.WalkBird">
+      <point x="-23.0" y="-25.5" />
+      <point x="228.0" y="71.0" />
+      <point x="180.75" y="71.0" />
+      <point x="60.25" y="25.5" />
+    </edge>
+    <edge source="chapter03principles.p03singleresponsibility.bird.Test" target="chapter03principles.p03singleresponsibility.bird.FlyBird">
+      <point x="23.0" y="-25.5" />
+      <point x="274.0" y="71.0" />
+      <point x="321.25" y="71.0" />
+      <point x="-60.25" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="96.5" y="114.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
