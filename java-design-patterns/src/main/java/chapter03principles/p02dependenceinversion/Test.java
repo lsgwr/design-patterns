@@ -8,8 +8,15 @@ package chapter03principles.p02dependenceinversion;
 
 public class Test {
     public static void main(String[] args) {
-        Geely geely = new Geely();
-        geely.studyImoocCourse(new JavaCourse());
-        geely.studyImoocCourse(new FeCourse());
+//        // 1.参数注入
+//        Geely geely = new Geely();
+//        geely.studyImoocCourse(new JavaCourse());
+//        geely.studyImoocCourse(new FeCourse());
+//        geely.studyImoocCourse(new PythonCourse());
+
+        // 2.构造函数注入
+        new Geely2(new JavaCourse()).studyImoocCourse();
+        new Geely2(new PythonCourse()).studyImoocCourse();
+        new Geely2(new FeCourse()).studyImoocCourse();
     }
 }
