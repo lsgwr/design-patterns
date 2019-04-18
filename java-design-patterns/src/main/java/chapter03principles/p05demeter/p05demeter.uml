@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>chapter03principles.p05demeter</OriginalElement>
+  <nodes>
+    <node x="0.0" y="180.0">chapter03principles.p05demeter.Boss</node>
+    <node x="257.00000000000006" y="0.0">chapter03principles.p05demeter.Course</node>
+    <node x="164.04166666666669" y="79.0">chapter03principles.p05demeter.TeamLeader</node>
+    <node x="179.66666666666669" y="281.0">chapter03principles.p05demeter.Test</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="chapter03principles.p05demeter.Test" target="chapter03principles.p05demeter.Boss">
+      <point x="-23.0" y="-25.5" />
+      <point x="248.66666666666669" y="261.0" />
+      <point x="246.75" y="261.0" />
+      <point x="82.25" y="25.5" />
+    </edge>
+    <edge source="chapter03principles.p05demeter.Test" target="chapter03principles.p05demeter.TeamLeader">
+      <point x="69.0" y="-25.5" />
+      <point x="340.6666666666667" y="261.0" />
+      <point x="350.50000000000006" y="261.0" />
+      <point x="350.50000000000006" y="155.0" />
+      <point x="374.0416666666667" y="155.0" />
+      <point x="84.0" y="25.5" />
+    </edge>
+    <edge source="chapter03principles.p05demeter.Boss" target="chapter03principles.p05demeter.TeamLeader">
+      <point x="0.0" y="-25.5" />
+      <point x="164.5" y="155.0" />
+      <point x="206.04166666666669" y="155.0" />
+      <point x="-84.0" y="25.5" />
+    </edge>
+    <edge source="chapter03principles.p05demeter.TeamLeader" target="chapter03principles.p05demeter.Course">
+      <point x="63.0" y="-25.5" />
+      <point x="353.0416666666667" y="54.0" />
+      <point x="326.00000000000006" y="54.0" />
+      <point x="23.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="254.5" y="210.5" />
+  <SelectedNodes>
+    <node>chapter03principles.p05demeter.Test</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
