@@ -1,5 +1,7 @@
-package chapter03principles.p05demeter;
+package chapter03principles.p05demeter.test;
 
+import chapter03principles.p05demeter.Boss;
+import chapter03principles.p05demeter.TeamLeader;
 import org.junit.Test;
 
 /**
