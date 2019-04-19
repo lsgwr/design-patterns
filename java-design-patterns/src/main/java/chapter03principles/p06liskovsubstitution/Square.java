@@ -6,13 +6,33 @@
  ***********************************************************/
 package chapter03principles.p06liskovsubstitution;
 
-public class Square {
+public class Square extends Rectangle{
     /**
      * 边长
      */
     private Long sideLength;
 
     public Square() {
+    }
+
+    @Override
+    public Long getLength() {
+        return getSideLength();
+    }
+
+    @Override
+    public void setLength(Long length) {
+        setSideLength(length);
+    }
+
+    @Override
+    public Long getWidth() {
+        return getSideLength();
+    }
+
+    @Override
+    public void setWidth(Long width) {
+        setSideLength(width);
     }
 
     public Square(Long sideLength) {
