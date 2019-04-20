@@ -3,6 +3,8 @@
 > 课程地址：[java设计模式精讲 Debug 方式+内存分析](https://coding.imooc.com/learn/list/270.html)
 
 
+详细课程目录见[课程目录](src/main/java/README.md)
+
 ## 课程体系
 
 ### UML入门
