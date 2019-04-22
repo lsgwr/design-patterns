@@ -1,7 +1,7 @@
 package chapter04simplefactory.test;
 
-import chapter04simplefactory.JavaVideo;
 import chapter04simplefactory.Video;
+import chapter04simplefactory.VideoFactory;
 import org.junit.Test;
 
 /**
@@ -15,7 +15,11 @@ public class VideoTest {
 
     @Test
     public void testMain() {
-        Video video = new JavaVideo();
+        VideoFactory videoFactory = new VideoFactory();
+        Video video = videoFactory.getVideo("java");
+        if (video == null) {
+            return;
+        }
         video.produce();
     }
 } 
