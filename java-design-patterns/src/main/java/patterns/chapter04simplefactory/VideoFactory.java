@@ -4,7 +4,7 @@
  * @date        : 2019/4/22 08:19
  * @email       : liangshanguang2@gmail.com
  ***********************************************************/
-package chapter04simplefactory;
+package patterns.chapter04simplefactory;
 
 public class VideoFactory {
     public Video getVideo(Class c) {

@@ -1,8 +1,8 @@
-package chapter04simplefactory.test;
+package patterns.chapter04simplefactory.test;
 
-import chapter04simplefactory.JavaVideo;
-import chapter04simplefactory.Video;
-import chapter04simplefactory.VideoFactory;
+import patterns.chapter04simplefactory.JavaVideo;
+import patterns.chapter04simplefactory.Video;
+import patterns.chapter04simplefactory.VideoFactory;
 import org.junit.Test;
 
 /**
