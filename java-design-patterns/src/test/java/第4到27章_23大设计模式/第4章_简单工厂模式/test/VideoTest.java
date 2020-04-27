@@ -1,8 +1,8 @@
-package patterns.chapter04simplefactory.test;
+package 第4到27章_23大设计模式.第4章_简单工厂模式.test;
 
-import patterns.chapter04simplefactory.JavaVideo;
-import patterns.chapter04simplefactory.Video;
-import patterns.chapter04simplefactory.VideoFactory;
+import 第4到27章_23大设计模式.第4章_简单工厂模式.JavaVideo;
+import 第4到27章_23大设计模式.第4章_简单工厂模式.Video;
+import 第4到27章_23大设计模式.第4章_简单工厂模式.VideoFactory;
 import org.junit.Test;
 
 /**
