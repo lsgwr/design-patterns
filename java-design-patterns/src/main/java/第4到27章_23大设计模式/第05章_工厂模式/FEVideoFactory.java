@@ -4,7 +4,7 @@
  * @date        : 2020/4/29 23:24
  * @email       : liangshanguang2@gmail.com
  ***********************************************************/
-package 第4到27章_23大设计模式.第5章_工厂模式;
+package 第4到27章_23大设计模式.第05章_工厂模式;
 
 public class FEVideoFactory extends VideoFactory {
     @Override
