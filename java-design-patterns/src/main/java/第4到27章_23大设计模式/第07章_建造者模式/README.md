@@ -25,3 +25,12 @@
 + 2、创建对象的力度不同：建造者模式可以创建一些复杂的产品，由各种复杂的部件组成；工厂模式常见出来都是一个样子
 + 3、关注点不同：工厂模式是将产品创建出来即可；建造者模式不仅要将产品创建出来，而且要知道产品由哪些部件组成
 + 4、顺序：工厂不关注顺序；建造者模式顺序不一致，产出的产品可能不一样
+
+## 链式调用地典型应用
+> 链式调用的最典型的建造者模式的使用，链式调用地最后一定是build()方法来返回想要的类的实例
++ StringBuilder每次append后都会返给当前的StringBuilder对象
++ StringBuffer每次append后都会返给当前的StringBuffer对象
++ ImmutableSet
++ Guava中的CacheBuilder
++ Spring中的BeanDefinitionBuilder
++ MyBatis中的SqlSessionFactoryBuilder、XMLConfigBuilder
