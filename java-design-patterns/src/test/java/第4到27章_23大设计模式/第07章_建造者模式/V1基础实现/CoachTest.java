@@ -1,4 +1,4 @@
-package 第4到27章_23大设计模式.第07章_建造者模式;
+package 第4到27章_23大设计模式.第07章_建造者模式.V1基础实现;
 
 import org.junit.Test;
 
