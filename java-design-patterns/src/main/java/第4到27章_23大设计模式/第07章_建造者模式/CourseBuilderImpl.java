@@ -7,7 +7,12 @@
 package 第4到27章_23大设计模式.第07章_建造者模式;
 
 public class CourseBuilderImpl extends CourseBuilder {
-    private Course course = new Course();
+    private Course course;
+
+    public CourseBuilderImpl() {
+        course = new Course();
+    }
+
     @Override
     public void buildCourseName(String courseName) {
         course.setCourseName(courseName);
