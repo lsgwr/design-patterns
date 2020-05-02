@@ -4,7 +4,7 @@
  * @date        : 2020/5/1 21:17
  * @email       : liangshanguang2@gmail.com
  ***********************************************************/
-package 第4到27章_23大设计模式.第08章_单例模式.懒汉式.基于synchronized关键字的线程安全的实现;
+package 第4到27章_23大设计模式.第08章_单例模式.懒汉式.V2基于synchronized关键字的线程安全的实现;
 
 public class SingletonLazy {
     /**

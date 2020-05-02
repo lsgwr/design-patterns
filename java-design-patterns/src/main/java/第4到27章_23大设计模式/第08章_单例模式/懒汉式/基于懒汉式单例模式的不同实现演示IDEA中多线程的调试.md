@@ -9,13 +9,13 @@
 ## 实战1：不安全的懒汉式单例模式演示
 
 ### 1.打好Thread模式的断点
-+ [Thread断点1代码地址](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/线程不安全的实现/SingletonLazyTest.java)
++ [Thread断点1代码地址](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/V1线程不安全的实现/SingletonLazyTest.java)
   > ![断点1](images/断点1.png)
 
-+ [Thread断点2代码地址](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/线程不安全的实现/SingletonLazyTest.java)
++ [Thread断点2代码地址](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/V1线程不安全的实现/SingletonLazyTest.java)
   > ![断点2](images/断点2.png)
 
-+ [Thread断点3代码地址](线程不安全的实现/SingletonLazy.java)
++ [Thread断点3代码地址](V1线程不安全的实现/SingletonLazy.java)
   > ![断点3](images/断点3.png)
 
 ### 2.模拟线程不安全的场景
@@ -63,7 +63,7 @@ public synchronized static SingletonLazy getSingletonLazy() {
 ```
 ### 2.和上面不安全的线程调试打一样位置的断点
 ### 3.开启调试
-+ 1.在[SingletonLazyTest](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/基于synchronized关键字的线程安全的实现/SingletonLazyTest.java)开启debug模式
++ 1.在[SingletonLazyTest](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/V2基于synchronized关键字的线程安全的实现/SingletonLazyTest.java)开启debug模式
   > ![开启debug](images/开启debug.png)
 + 2.切换到线程0，并两次F6单步调试走进synchronized函数修饰的getSingletonLazy函数
   > ![synchronized线程0开启调试](images/synchronized线程0开启调试.png)
