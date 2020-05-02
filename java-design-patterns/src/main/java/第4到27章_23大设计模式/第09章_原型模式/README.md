@@ -23,3 +23,8 @@
 ## 扩展
 + 浅克隆(deepClone)：可以克隆类中的基础数据类型的属性，类中的类属性是不行地
 + 深克隆(clone)：既可以克隆类中的基础数据类型的属性，又可以克隆类中的类属性
+
+## 应用
++ 利用原型模式的clone可以破坏单例模式
++ JDK中：所有实现`java.lang.cloneable`接口的类，大约有100多处
++ MyBatis：`org.apache.ibatis.cache.CacheKey`
