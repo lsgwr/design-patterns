@@ -1,5 +1,5 @@
 # 第11章 装饰者模式(decorator)
-
+> 特点是继承类某个类+把这个继承的类作为构造器参数传入进来
 ## 定义
 + 在不改变原有对象的基础之上，将功能附加到对象上
 + 提供了比继承更有弹性的替代方案(扩展原有对象功能)
@@ -19,6 +19,12 @@
 
 ## 相关设计模式
 + 装饰者模式和代理模式
-  + 装饰者模式关注在一个对象上动态地添加方法。通常是把原始对象作为一个参数传给装饰者构造器
+  + 装饰者模式关注在一个对象上动态地添加方法。通常是把`原始对象作为一个参数传给装饰者构造器`
   + 代理模式关注于控制对对象的访问，可以对客户隐藏对象的具体信息。通常是在代理类中创建一个对象的实例
-+ 装饰者模式和适配器模式：都是包装模式的一种
++ 装饰者模式和适配器模式：都是包装模式(Wrapper)的一种
+
+## 应用
++ JDK中的：`java.io.BufferedReader/BufferedInputStream/FileInputStream`等java.io中的很多类
++ Spring中：`org.springframework.cache.transaction.TransactionAwareCacheDecorator`
++ Tomcat中：`javax.servlet.http.HttpServletRequest`的几个实现类
++ MyBatis中：`org.apache.ibatis.cache.decorators`包下的所有类都是包装器类
