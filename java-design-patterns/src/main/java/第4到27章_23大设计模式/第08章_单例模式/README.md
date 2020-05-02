@@ -30,7 +30,7 @@
 单线程下没问题
 ![DoubleCheck1](images/DoubleCheck1.png)
 多线程中会访问到一片随机的内存区域
-![DoubleCheck2](懒汉式/V3基于双重检查的线程安全的实现/不加volatile时的指令重排序问题.png)
+![DoubleCheck2](懒汉式/V3基于双重检查的线程安全的实现/DoubleCheck的指令重排序问题.png)
 
 ### 2.饿汉式(一开始就随着类创建)：静态内部类
 ![静态内部类实现单例模式](images/静态内部类实现单例模式.png)
