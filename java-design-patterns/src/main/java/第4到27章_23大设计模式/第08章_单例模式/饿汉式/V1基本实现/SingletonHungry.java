@@ -15,7 +15,7 @@ public class SingletonHungry {
      * <code>
      * private final static SingletonHungry singletonHungry;
      * static {
-     * singletonHungry = new SingletonHungry();
+     *     singletonHungry = new SingletonHungry();
      * }
      * </code>
      */
