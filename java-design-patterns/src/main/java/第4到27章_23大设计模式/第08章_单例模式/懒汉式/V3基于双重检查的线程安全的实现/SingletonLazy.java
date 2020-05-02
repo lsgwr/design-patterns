@@ -9,8 +9,12 @@ package 第4到27章_23大设计模式.第08章_单例模式.懒汉式.V3基于�
 public class SingletonLazy {
     /**
      * 静态static属性归所有实例共享，是实现单例模式的关键
+     *
+     * volatile关键字实现线程安全的延迟初始化，重排序就会被禁止。多线程情况下，CPU也有共享内存，
+     * 加了volatile关键字之后，所有的线程都可以看见共享内存的最新状态，保证了内存的可见性；
+     * 缓存一致性，当前处理器缓存数据写到系统内存，同步数据
      */
-    private static SingletonLazy singletonLazy = null;
+    private volatile static SingletonLazy singletonLazy = null;
 
     /**
      * 构造器必须是私有地，防止外部创建类实例

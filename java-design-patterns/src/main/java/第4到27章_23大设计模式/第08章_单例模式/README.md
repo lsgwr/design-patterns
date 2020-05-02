@@ -25,12 +25,14 @@
 + 反射也可以破坏单例模式，如何防御`反射攻击`
 
 ## 单例模式的常见实现方式
-### 1.Double Check
+### 1.懒汉式(用到时才创建)：Double Check(防止指令重排序的双重检查机制)
+> 不加volatile会有指令重排序问题
+单线程下没问题
 ![DoubleCheck1](images/DoubleCheck1.png)
+多线程中会访问到一片随机的内存区域
+![DoubleCheck2](懒汉式/V3基于双重检查的线程安全的实现/不加volatile时的指令重排序问题.png)
 
-![DoubleCheck2](images/DoubleCheck2.png)
-
-## 2.静态内部类
+### 2.饿汉式(一开始就随着类创建)：静态内部类
 ![静态内部类实现单例模式](images/静态内部类实现单例模式.png)
 
 ## 实用技能
