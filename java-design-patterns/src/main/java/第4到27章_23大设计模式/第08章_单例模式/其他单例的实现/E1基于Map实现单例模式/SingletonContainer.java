@@ -10,6 +10,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SingletonContainer {
+    /**
+     * 使用HashMap会导致线程不安全从而单例模式不可靠，用Hashtable影响性能，综合考虑用ConcurrentHashMap最好
+     */
     private static Map<String, Object> singletonMap = new HashMap<>();
 
     private SingletonContainer() {
