@@ -7,6 +7,9 @@
 package 第4到27章_23大设计模式.第08章_单例模式.懒汉式.线程不安全的实现;
 
 public class SingletonLazy {
+    /**
+     * 静态static属性归所有实例共享，是实现单例模式的关键
+     */
     private static SingletonLazy singletonLazy = null;
 
     /**
