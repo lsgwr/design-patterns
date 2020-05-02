@@ -36,7 +36,8 @@ public class SingletonHungry implements Serializable {
     }
 
     /**
-     * 最终返回的是同一个单例对象。但中间过程也创建了对象，通过反射调用readResolve()方法(ObjectInputStream里面的方法)，返回之前就创建好的对象
+     * 最终返回的是同一个单例对象。但中间过程也创建了对象，通过反射调用readResolve()方法(ObjectInputStream里面的
+     * 方法readObject()会判断Singleton有readResolve就会调用到)，返回之前就创建好的对象
      */
     private Object readResolve() {
         return singletonHungry;
