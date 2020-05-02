@@ -25,7 +25,7 @@
 + 反射也可以破坏单例模式，如何防御`反射攻击`
 
 ## 单例模式的常见实现方式
-### 懒汉式(用到时才创建)
+### 一、懒汉式(用到时才创建)
 #### 1.Double Check(使用volatile防止指令重排序的双重检查机制)
 > 不加volatile会有指令重排序问题,加volatile可以禁止指令重排序
 单线程下没问题
@@ -69,6 +69,12 @@ public class SingletonLazy {
 ```
 ![静态内部类实现单例模式](懒汉式/V3基于双重检查的线程安全的实现/E2让其他线程看不到指令重排序之静态内部类/静态内部类实现单例模式.png)
 
+### 二、饿汉式
++ 基本实现：通过`final static`属性来实现
++ 如何防止序列化破坏单例
++ 如何防反射破坏单例
++ 基于枚举实现地最完美的单例，也是《Effective Java》推荐的实现
+
 ## 实用技能
 + 反编译
 + 内存原理
@@ -77,3 +83,8 @@ public class SingletonLazy {
 ## 和单例模式经常结合使用的设计模式
 + 工厂模式
 + 享元模式
+
+## 单例模式的引用
++ JDK中：`java.lang.Runtime`、`java.awt.Desktop`
++ Spring中：是基于Map实现的不同单例的管理
++ MyBatis: `org.apache.ibatis.executor.ErrorContext`
