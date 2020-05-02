@@ -6,7 +6,7 @@
  ***********************************************************/
 package 第4到27章_23大设计模式.第09章_原型模式;
 
-public class Mail {
+public class Mail implements Cloneable{
     private String name;
     private String email;
     private String content;
@@ -46,5 +46,11 @@ public class Mail {
                 ", email='" + email + '\'' +
                 ", content='" + content + '\'' +
                 '}';
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        System.out.println("clone mail object");
+        return super.clone();
     }
 }
