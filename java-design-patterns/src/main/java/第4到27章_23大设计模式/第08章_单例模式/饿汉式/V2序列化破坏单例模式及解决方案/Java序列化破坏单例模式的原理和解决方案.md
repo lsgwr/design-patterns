@@ -1,4 +1,4 @@
-# Java序列化与单例模式
+# Java序列化破坏单例模式的原理和解决方案
 > 文章参考：https://www.cnblogs.com/ixenos/p/5831067.html
 
 ## 序列化对单例的破坏
