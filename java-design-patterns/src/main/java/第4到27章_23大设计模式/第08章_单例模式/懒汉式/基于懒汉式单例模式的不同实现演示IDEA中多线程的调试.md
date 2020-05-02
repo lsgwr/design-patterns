@@ -63,4 +63,13 @@ public synchronized static SingletonLazy getSingletonLazy() {
 ```
 ### 2.和上面不安全的线程调试打一样位置的断点
 ### 3.开启调试
-+ 1.在[SingletonLazyTest](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/基于synchronized关键字的线程安全的实现/SingletonLazyTest.java)开启debu模式
++ 1.在[SingletonLazyTest](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/基于synchronized关键字的线程安全的实现/SingletonLazyTest.java)开启debug模式
+  > ![开启debug](images/开启debug.png)
++ 2.切换到线程0，并两次F6单步调试走进synchronized函数修饰的getSingletonLazy函数
+  > ![synchronized线程0开启调试](images/synchronized线程0开启调试.png)
+  > 两次F6走进synchronized函数修饰的getSingletonLazy函数
+  > ![两次F6走进synchronized函数修饰的getSingletonLazy函数](images/两次F6走进synchronized函数修饰的getSingletonLazy函数.png)
++ 3.切到线程1，会看到线程1处于Monitor模式，即阻塞模式，synchronized函数修饰的getSingletonLazy函数被线程0拿到锁了，线程1无法进入，把线程0走完让线程1拿到锁才能让线程1运行
+  > ![线程1倍线程0阻塞了](images/线程1倍线程0阻塞了.png)
++ 4.把线程0走完，在切回线程1，线程1可以正常运行，因为线程0走完单例已经实例化完成，进入线程1后判空逻辑进不去，直接返回线程0创建的单例对象了，从而保证了单例的正确性
+  > ![合理的单例模式结果](images/合理的单例模式结果.png)
