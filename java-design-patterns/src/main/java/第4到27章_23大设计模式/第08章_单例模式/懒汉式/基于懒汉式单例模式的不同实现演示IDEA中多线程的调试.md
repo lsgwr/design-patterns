@@ -39,3 +39,28 @@
   > ![线程1得到的单例对象](images/线程1得到的单例对象.png)
   > 线程1最后的哈希码
   > ![线程1得到的单例对象的哈希码](images/线程1得到的单例对象的哈希码.png)
+
+## 实战2：通过synchronized加在getSingletonLazy实现了安全的单例模式
+### 1.关键函数上加synchronized
+> 这种模式等效于`synchronized(SingletonLazy.class)`，虽然简单，但是锁的范围太大，会影响性能
+```java
+/**
+ * 简单的判空，线程不安全的实现，单线程下没问题，多线程下有出现多个SingletonLazy实例的风险
+ *
+ * synchronized加在static方法上是加在类上，等效于synchronized(SingletonLazy.class)，即
+ * synchronized (SingletonLazy.class) {
+ *     if (singletonLazy == null) {
+ *         singletonLazy = new SingletonLazy();
+ *     }
+ * }
+ */
+public synchronized static SingletonLazy getSingletonLazy() {
+    if (singletonLazy == null) {
+        singletonLazy = new SingletonLazy();
+    }
+    return singletonLazy;
+}
+```
+### 2.和上面不安全的线程调试打一样位置的断点
+### 3.开启调试
++ 1.在[SingletonLazyTest](../../../../../../src/test/java/第4到27章_23大设计模式/第08章_单例模式/懒汉式/基于synchronized关键字的线程安全的实现/SingletonLazyTest.java)开启debu模式
