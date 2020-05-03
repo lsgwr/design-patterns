@@ -37,7 +37,13 @@
   + 代理模式是不能改变代理类的接口地
 
 ## 应用
-### Spring中的代理选择
-+ 当Bean有实现接口时，Spring就会用JDK的动态代理
-+ 当Bean没有实现接口时，Spring使用CGLib
-+ 强制使用CGLib：在spring的配置中加入`<aop:aspectj-autoproxy proxy-target-class="true"/>`
++  Spring中的代理选择
+  + 当Bean有实现接口时，Spring就会用JDK的动态代理
+  + 当Bean没有实现接口时，Spring使用CGLib
+  + 强制使用CGLib：在spring的配置中加入`<aop:aspectj-autoproxy proxy-target-class="true"/>`
++ JDK：
+  + `java.lang.reflect.Proxy`
++ Spring:
+  + `org.springframework.aop.framework.ProxyFactoryBean/jdkDynamicAopProxy/CglibAopProxy`
++ MyBatis:
+  + `org.apache.ibatis.binding.MapperProxyFactory/MapperProxy`
