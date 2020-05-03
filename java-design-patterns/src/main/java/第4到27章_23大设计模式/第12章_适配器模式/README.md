@@ -31,3 +31,10 @@
 ## 类适配器和对象适配器的区别
 + [类适配器模式](E1类适配器)：通过类继承获取被继承者的方法
 + [对象适配器模式](E2对象适配器)：通过组合方式，把具体实现Target的request方法委托给adaptee来实现
+
+## 应用
++ JDK中：`javax.xml.bind.annotation.adapters`包下面的所有类
+  > ![java的xml适配器](images/java的xml适配器.png)
++ Spring中：`org.springframework.aop.framework.adapter`包下面的所有类
++ JPA中：`org.springframework.orm.jpa.JpaVendorAdapter`
++ SpringMVC中：`org.springframework.web.servlet.HandlerAdapter`
