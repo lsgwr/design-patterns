@@ -1,5 +1,6 @@
 # 第14章 组合模式(composite)
-
+> 简单说就是实现了某个接口同时包含多个此接口的组成的List
+![mybatis中的组合模式](images/mybatis中的组合模式.png)
 ## 定义
 + 将对象组合成树形结构以表示"部分-整体"的层次结构
 + 组合模式使客户端对单个对象和组合对象保持一致的方式处理
@@ -21,3 +22,10 @@
 
 ## 相关设计模式
 + 组合模式和访问者模式：可以使用访问者模式访问组合模式中的递归结构
+
+## 应用
++ JDK中
+  + `java.awt.Container`
+  + `java.util.HashMap`的实现`java.util.ArrayList`
++ MyBatis:`org.apache.ibatis.scrioting.xmltags.SqlNode`的实现类
+  > ![SqlNode的实现类](images/SqlNode的实现类.png)
