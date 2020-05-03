@@ -30,3 +30,4 @@
   + 功能不同：适配器模式可以把功能相似但是接口不同的类适配起来；桥接模式是把类的抽象和具体实现分离开
 
 ## 应用
+> JDBC：`java.sql.Driver/DriverManager/Connection`等
