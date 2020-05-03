@@ -24,3 +24,12 @@
 ## 相关设计模式
 + 享元模式和代理模式：如果代码模式在生成代理类比较费时间和性能，就可以用享元模式来改善
 + 享元模式和单例模式：[基于Map实现地单例](../第08章_单例模式/其他单例的实现/E1基于Map实现单例模式)通过Map来提高单例模式的性能。这就是典型的享元模式的应用
+
+## 应用
++ JDK中
+  + `java.lang.Integer`:`valueOf(int i)`方法，里面用IntegerCache即`整数缓存池`提高了整数的性能
+  + `java.lang.String`: 用字符缓冲池，类似Integer的实现
+  + `java.lang.Long`：同样Long也有缓冲池，类似上面俩的实现
++ apache-commons:
+  + `org.apache.commons.pool.impl.GenericKeyedObjectPool`:borrow(K key)方法
+  + `org.apache.commons.pool2.impl.GenericKeyedObjectPool`:borrow(K key)方法
