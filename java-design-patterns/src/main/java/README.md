@@ -2,18 +2,8 @@
 
 > [课程地址](https://coding.imooc.com/learn/list/270.html)
 
-## IDEA的UML类图
-### 配置
-> 勾选向
-![IDEA的UML类图配置](IDEA的UML类图配置.png)
-### 查看包的类图
-+ 包名上右键-->接近最下方有个Diagrams-->Show Diagram
-  > ![IDEA中查看UML类图](IDEA中查看UML类图.png)
-+ 然后选择`Java Class Diagrams` 
-  > ![IDEA中查看UML类图2](IDEA中查看UML类图2.png)
-+ 然后在打开的Java类图中打开"Show Dependencies"按钮，如下图，到此才能和课程中老师展示地完全一样
-  > ![IDEA中查看UML类图3](IDEA中查看UML类图3.png)
 
++ 
 ## 第1章 课程导学
 
 + 1-1 课前必读（不看会错过一个亿）
