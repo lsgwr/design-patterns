@@ -22,4 +22,12 @@
 + 策略模式和工厂模式：工厂模式创建好对象提供给策略模式
 + 策略模式状态模式：策略模式需要关心状态，状态模式不需要关心具体的状态(因为状态会自动转换)
 
+## 应用
++ JDK：
+  + `java.utl.Comparator`及其实现类
+  + `java.utl.Arrays`及其实现类
+  + `java.utl.TreeMap`及其实现类
++ Spring:
+  + `org.springframework.core.io.Resource`及其实现类
+  + `org.springframework.beans.factory.support.InstantiationStratety`及其实现类
 
