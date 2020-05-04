@@ -18,3 +18,7 @@
 
 ## 相关设计模式
 + 命令模式和备忘录模式：经常使用备忘录模式来保存命令的历史记录
+
+## 应用
++ JDK：`java.lang.Runnable`
++ Junit: `junit.framework.Test/TestCase`
