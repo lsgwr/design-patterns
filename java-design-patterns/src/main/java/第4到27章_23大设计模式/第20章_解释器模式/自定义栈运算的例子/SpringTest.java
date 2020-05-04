@@ -12,6 +12,5 @@ public class SpringTest {
         Expression expression = parser.parseExpression("100 * 2 + 400 * 1 + 66");
         int result = (Integer) expression.getValue();
         System.out.println(result);
-
     }
 }

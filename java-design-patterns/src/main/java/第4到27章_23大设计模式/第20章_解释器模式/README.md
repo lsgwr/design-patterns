@@ -18,3 +18,7 @@
 + 解释器模式和适配器模式：
   + 适配器模式不需要提前知道规则
   + 解释器模式需要提前知道规则
+  
+## 应用
++ JDK：`java.util.Pattern`
++ Spring: `org.springframework.expression.spel.standard.SpelExpressionParser`
