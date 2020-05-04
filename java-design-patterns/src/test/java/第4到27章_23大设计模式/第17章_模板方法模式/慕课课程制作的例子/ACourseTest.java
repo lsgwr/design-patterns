@@ -16,7 +16,8 @@ public class ACourseTest {
         System.out.println();
 
         System.out.println("前端课程start......");
-        ACourse feCourse = new FECourse();
+        // 通过标记位把是否需要写手记传入进去
+        ACourse feCourse = new FECourse(true);
         feCourse.makeCourse();
         System.out.println("前端课程end......");
     }
