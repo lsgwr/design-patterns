@@ -12,8 +12,8 @@ public class PromotionActivityTest {
      */
     @Test
     public void executePromotionStrategy() {
-        PromotionActivity promotionActivity618 = new PromotionActivity(new LiJianPromotionStrategy());
-        PromotionActivity promotionActivity1111 = new PromotionActivity(new FanXianPromotionStrategy());
+        PromotionActivity promotionActivity618 = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("立减"));
+        PromotionActivity promotionActivity1111 = new PromotionActivity(PromotionStrategyFactory.getPromotionStrategy("返现"));
         promotionActivity618.executePromotionStrategy();
         promotionActivity1111.executePromotionStrategy();
     }
