@@ -31,3 +31,7 @@
 ## 应用
 + JDK：
   + `java.util.AbstractList`:有众多实现它的类
++ Tomcat:
+  + `javax.servlet.http.HttpServlet`
++ MyBatis:
+  + `org.apache.ibatis.executor.BaseExecutor/SimpleExecutor`
