@@ -16,3 +16,7 @@
 + 使用要得当，要避免循环调用
 
 ## 应用
++ JDK：
+  + `java.awt.EventListener`及其实现类
++ commons:
+  + `com.google.commons.eventbus.Subscribe`：例子见[GuavaEvent订阅模式举例](guavatest)
