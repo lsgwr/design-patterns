@@ -17,3 +17,6 @@
 
 ## 相关设计模式
 + 责任链模式和状态模式
+
+## 应用
++ Tomcat：`javax.servlet.Filter/FilterChain`
