@@ -20,3 +20,9 @@
 + 访问者模式与迭代器模式：
   + 访问者模式侧重于访问
   + 迭代器模式侧重于遍历
+
+## 应用
++ JDK：
+  + `java.nio.FileVisitor`:符合条件地文件才能被访问
++ Spring:
+  + `org.springframework.beans.factory.config.BeanDefinitionVisitor`
