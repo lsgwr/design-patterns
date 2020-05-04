@@ -4,6 +4,10 @@ package 第4到27章_23大设计模式.第25章_责任链模式.课程发布审�
  * Created by geely
  */
 public class Test {
+    /**
+     * Java设计模式精讲 -- By Geely含有手记,批准
+     * Java设计模式精讲 -- By Geely含有视频,批准
+     */
     public static void main(String[] args) {
         Approver articleApprover = new ArticleApprover();
         Approver videoApprover = new VideoApprover();
