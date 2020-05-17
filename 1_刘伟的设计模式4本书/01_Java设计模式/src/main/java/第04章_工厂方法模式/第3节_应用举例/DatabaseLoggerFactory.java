@@ -6,7 +6,7 @@
  ***********************************************************/
 package 第04章_工厂方法模式.第3节_应用举例;
 
-public class DatabaseLoggerFactory implements LoggerFactory{
+public class DatabaseLoggerFactory extends LoggerFactory{
 
     @Override
     public Logger createLogger() {

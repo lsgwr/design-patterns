@@ -12,8 +12,7 @@ public class Test2 {
         Logger logger;
         // 可引入配置文件和反射机器获取
         factory = (LoggerFactory) XmlUtil.getBean();
-        logger = factory.createLogger();
-        logger.writeLog();
+        factory.writeLog();
     }
 }
 /**
