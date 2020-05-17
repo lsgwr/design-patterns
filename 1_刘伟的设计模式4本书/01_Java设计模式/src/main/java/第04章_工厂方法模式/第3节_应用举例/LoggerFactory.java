@@ -11,4 +11,6 @@ package 第04章_工厂方法模式.第3节_应用举例;
  */
 public interface LoggerFactory {
     Logger createLogger();
+    Logger createLogger(String args);
+    Logger createLogger(Object obj);
 }

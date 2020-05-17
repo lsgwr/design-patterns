@@ -15,4 +15,22 @@ public class FileLoggerFactory implements LoggerFactory{
         // 创建文件，代码省略
         return logger;
     }
+
+    @Override
+    public Logger createLogger(String args) {
+        // 使用字符串args做些初始化的工作
+        // 创建文件日志记录器
+        Logger logger = new FileLogger();
+        // 创建文件，代码省略
+        return logger;
+    }
+
+    @Override
+    public Logger createLogger(Object obj) {
+        // 使用对象obj里面的属性做些初始化的工作
+        // 创建文件日志记录器
+        Logger logger = new FileLogger();
+        // 创建文件，代码省略
+        return logger;
+    }
 }
