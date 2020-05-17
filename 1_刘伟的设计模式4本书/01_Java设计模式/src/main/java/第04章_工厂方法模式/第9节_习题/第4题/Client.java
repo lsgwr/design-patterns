@@ -6,24 +6,37 @@
  ***********************************************************/
 package 第04章_工厂方法模式.第9节_习题.第4题;
 
+import org.junit.After;
+
 public class Client {
+    private CarFactory factory = null;
+    private Car car = null;
+
+    /**
+     * 生产了一台奔驰车
+     * 我是一台奔驰！
+     */
     @org.junit.Test
     public void test1() {
-        CarFactory factory = new BenzFactory();
-        Car car = factory.productCar();
-        car.getName();
+        factory = new BenzFactory();
     }
 
+    /**
+     * 生产了一台宝马车
+     * 我是一台宝马
+     */
     @org.junit.Test
     public void test2() {
-        CarFactory factory = new BmwFactory();
-        Car car = factory.productCar();
+        factory = new BmwFactory();
+    }
+
+    /**
+     * 每一个测试方法的调用顺序为: @Before -> @Test -> @After;
+     */
+    @After
+    public void create() {
+        car = factory.productCar();
         car.getName();
     }
 }
-/**
- * 生产了一台奔驰车
- * 我是一台奔驰！
- * 生产了一台宝马车
- * 我是一台宝马
- */
+
