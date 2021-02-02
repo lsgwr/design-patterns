@@ -22,6 +22,7 @@
   + 装饰者模式关注在一个对象上动态地添加方法。通常是把`原始对象作为一个参数传给装饰者构造器`
   + 代理模式关注于控制对对象的访问，可以对客户隐藏对象的具体信息。通常是在代理类中创建一个对象的实例
 + 装饰者模式和适配器模式：都是包装模式(Wrapper)的一种
+  > 二者的区别见博客：https://blog.csdn.net/m0_37771398/article/details/88855888
 
 ## 应用
 + JDK中的：`java.io.BufferedReader/BufferedInputStream/FileInputStream`等java.io中的很多类
